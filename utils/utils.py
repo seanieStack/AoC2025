@@ -13,9 +13,9 @@ def print_map(puzzle_map):
         print(row)
     print("\n")
 
-def load_map():
+def load_map(name):
     puzzle_map = defaultdict(lambda: "?")
-    with open("input") as f:
+    with open(name) as f:
         for i, line in enumerate(f.readlines()):
             for j, char in enumerate(list(line.strip())):
                 puzzle_map[(i, j)] = char

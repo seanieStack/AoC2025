@@ -1,6 +1,6 @@
 from utils.utils import load_map, print_map
 
-puzzle_map = load_map()
+puzzle_map = load_map("input")
 
 def get_surrounding_paper(cord):
     paper_count = 0
